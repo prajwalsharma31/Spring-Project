@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container-fluid">
+
+		<div class="card">
+
+			<div class="card-header bg-primary text-center text-white">
+				<h5>Department Details</h5>
+			</div>
+
+			<div class="card-body ">
+				<form action="/employee" method="post" th:object="${eModel}">
+
+					<div class="row p-2">
+						<div class="col-4">First Name</div>
+						<div class="col-6"></div>
+						<input type="text" th:field="*{fname}" class="form-control">
+					</div>
+
+
+
+					<div class="row p-2">
+						<div class="col-4">Last Name</div>
+						<div class="col-6"></div>
+						<input type="text" th:field="*{lname}" class="form-control">
+					</div>
+			
+
+
+
+			<div class="row p-2">
+						<div class="col-4">Gender</div>
+						<div class="col-6"></div>
+						<input type="text" th:field="*{Gender}" class="form-control">
+					</div>
+					
+					
+					<div class="row p-2">
+						<div class="col-4">Phone Number</div>
+						<div class="col-6"></div>
+						<input type="text" th:field="*{phone}" class="form-control">
+					</div>
+					
+					<div class="row p-2">
+						<div class="col-4">Email</div>
+						<div class="col-6"></div>
+						<input type="text" th:field="*{email}" class="form-control">
+					</div>
+
+
+
+			<div class="row p-2">
+				<div class="col-4"></div>
+				<div class="col-6">
+					<input type="submit" value="add" class="btn btn-success btn-lg">
+					<div></div>
+
+					<input type="hidden" th:field="*{id}">
+					</form>
+
+				</div>
+				<div class="card-footer  bg-warning text-center">
+					<h6>copyright@2024</h6>
+
+				</div>
+
+
+			</div>
+		</div>
+	
+
+</body>
+</html>
